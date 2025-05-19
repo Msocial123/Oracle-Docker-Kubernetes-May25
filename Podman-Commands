@@ -1,0 +1,11 @@
+podman run ubuntu /bin/bash
+    8  podman create ubuntu /bin/bash
+    9  podman ps
+   10  podman ps -a
+   11  podman start 96236492c8b0
+   12  podman ps
+   13  podman ps -a
+   14  podman create -it --name webserver ubuntu /bin/bash
+   15  podman ps -a
+   16  podman start webserver
+   17  podman ps
