@@ -14,3 +14,13 @@ podman run ubuntu /bin/bash
     podman ps
     podman port nginx-webserver
     podman run -td --name cart-app -p 3001:3000 muralisocial123/cart-page-example:1.0
+      podman ps
+   39  podman pause cart-app
+   40  podman ps
+   41  podman ps -a
+   42  podman unpause cart-app
+   43  podman ps
+   44  podman stop cart-app
+   45  podman ps -a
+   46  podman rm cart-app
+   47  podman ps
