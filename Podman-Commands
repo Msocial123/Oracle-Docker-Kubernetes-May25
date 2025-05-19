@@ -9,3 +9,8 @@ podman run ubuntu /bin/bash
    15  podman ps -a
    16  podman start webserver
    17  podman ps
+    podman run -td --name nginx-webserver -p 81:80 nginx
+    podman images
+    podman ps
+    podman port nginx-webserver
+    podman run -td --name cart-app -p 3001:3000 muralisocial123/cart-page-example:1.0
