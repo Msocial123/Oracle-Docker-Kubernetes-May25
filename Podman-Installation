@@ -10,3 +10,21 @@ sudo apt install -y podman
 
 chmod 400 "Podman-Instance.pem"
 ssh -i "Podman-Instance.pem" ubuntu@ec2-15-206-148-22.ap-south-1.compute.amazonaws.com
+
+
+Create a Container 
+podman run -it --name test-web -p 82:80 ubuntu /bin/bash
+
+Inside the container install the different packages 
+
+ 1  apt-get update -y
+    2  apt-get install apache2 -y
+    3  which git
+    4  git --version
+    5  apt-get install git -y
+    6  git clone -b master https://github.com/Msocial123/Coursevita-Retail-Project.git
+    7  ls
+    8  cd Coursevita-Retail-Project/
+     cp -r . /var/www/html
+      service apache2 start
+   24  service apache2 status
