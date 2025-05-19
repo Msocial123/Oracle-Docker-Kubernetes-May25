@@ -5,3 +5,8 @@ sudo add-apt-repository -y "deb https://download.opensuse.org/repositories/devel
 curl -L "https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/Release.key" | sudo gpg --dearmor -o /usr/share/keyrings/libcontainers-archive-keyring.gpg
 sudo apt update
 sudo apt install -y podman
+
+**************************
+
+chmod 400 "Podman-Instance.pem"
+ssh -i "Podman-Instance.pem" ubuntu@ec2-15-206-148-22.ap-south-1.compute.amazonaws.com
