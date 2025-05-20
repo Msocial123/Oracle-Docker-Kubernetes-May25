@@ -24,3 +24,12 @@ podman run ubuntu /bin/bash
    45  podman ps -a
    46  podman rm cart-app
    47  podman ps
+
+-----------------------------
+20th May :
+
+podman build -t nginx-web-app:1.2.0 .
+  19 podman run -td --name web-app3 -p 8083:80 localhost/nginx-web-app:1.2.0
+  20 podman ps
+  21 podman exec -it web-app3 /bin/bash
+  22 podman exec -it web-app3 /bin/sh
