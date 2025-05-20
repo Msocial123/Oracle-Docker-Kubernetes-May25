@@ -38,3 +38,55 @@ podman build -t nginx-web-app:1.2.0 .
   podman login docker.io
     6  podman tag localhost/flower-app:1.0 docker.io/muralisocial123/flower-app:1.0
     7  podman push docker.io/muralisocial123/flower-app:1.0
+  Bind Volumes :
+
+  6  podman run -it --name A1 -v /home/Oracle-DataBackup:/data ubuntu /bin/bash
+    7  podman volume ls
+    8  ld
+    9  ls
+   10  cd ..
+   11  ls
+   12  podman rm A1
+   13  ls
+   14  cd Oracle-DataBackup
+   15  ls
+   16  podman run -it --name A1 -v /home/Oracle-DataBackup:/data ubuntu /bin/bash 
+
+   Anonymous Volumes,Named Volumes :
+
+    podman run -it --name A1 ubuntu /bin/bash
+   10  podman rm A1
+   11  podman ps -a
+   12  clear
+   13  podman run -it --name A1 -v /data ubuntu /bin/bash
+   14  podman volumes
+   15  podman volume
+   16  podman volume ls
+   17  cd /home/user/.local/share/containers/storage/volumes
+   18  ls
+   19  cd 67de814ef10ac42bd79aed1006c003e6aa95e4cd92bf07512f59b2e3ac192b05
+   20  ls
+   21  cd _data
+   22  ls
+   23  podman ps
+   24  podman ps -a
+   25  podman rm A1
+   26  cd /home/user/.local/share/containers/storage/volumes
+   27  cd 67de814ef10ac42bd79aed1006c003e6aa95e4cd92bf07512f59b2e3ac192b05
+   28  cd _data
+   29  ls
+   30  podman run -it --name A1 -v mydata:/data ubuntu /bin/bash
+   31  podman volume ls
+   32  cd ..
+   33  ls
+   34  cd mydata
+   35  ls
+   36  cd _data
+   37  ls
+   38  podman run -it --name A1 -v E:\Trainings\Oracle-Podman-DataBackup:/data ubuntu /bin/bash
+   39  cd /home
+   40  ls
+   41  mkdir Oracle-DataBackup
+   42  sudo su
+
+
