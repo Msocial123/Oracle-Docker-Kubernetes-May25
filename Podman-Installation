@@ -9,7 +9,7 @@ sudo apt install -y podman
 **************************
 
 chmod 400 "Podman-Instance.pem"
-ssh -i "Podman-Instance.pem" ubuntu@ec2-15-206-148-22.ap-south-1.compute.amazonaws.com
+ssh -i "Podman-Instance.pem" ubuntu@ec2-13-234-76-186.ap-south-1.compute.amazonaws.com
 
 
 Create a Container 
