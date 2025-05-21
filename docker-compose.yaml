@@ -1,0 +1,17 @@
+version: '3.9'
+services:
+  cart-app:
+    image: muralisocial123/cart-page-example:1.0
+    container_name: cart-app-container
+    ports:
+      - "3001:3000"
+  maven-web-app:
+    image: muralisocial123/maven-web-app:1.0
+    container_name: web-app 
+    ports:
+      - "8084:8080"
+  organic-app: 
+    image: muralisocial123/organic-app-web:latest  
+    container_name: organic-app 
+    ports:
+      - "5657:5656"
