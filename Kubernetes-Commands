@@ -1,0 +1,1 @@
+oci ce cluster create-kubeconfig --cluster-id ocid1.cluster.oc1.ap-hyderabad-1.aaaaaaaa22aialrrvcfh34hybh6i44gkcy7u4zlhqtyqj7lcecxua7rkc7ca --file $HOME/.kube/config --region ap-hyderabad-1 --token-version 2.0.0  --kube-endpoint PUBLIC_ENDPOINT
