@@ -90,3 +90,19 @@ podman build -t nginx-web-app:1.2.0 .
    42  sudo su
 
 
+Podman Networking Commands : 
+
+1 podman ps
+   2 podman ps -a
+   3 podman ps -a
+   4 clear
+   5 podman run -td --name Sample-app -p 8082:8080 muralisocial123/maven-web-app:1.0
+   6 podman ps
+   7 podman inspect Sample-app
+   8 podman network ls
+   9 podman network create my-network --subnet 10.10.0.0/24 --gateway 10.10.0.1
+  10 podman network ls
+  11 podman network inspect my-network
+  12 podman run -td --network my-network --name Sample-app1 -p 8083:8080 muralisocial123/maven-web-a...
+  13 podman inspect my-network
+  14 podman inspect Sample-app1
