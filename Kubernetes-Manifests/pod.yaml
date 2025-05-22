@@ -9,3 +9,7 @@ spec:
       image: muralisocial123/maven-web-app:1.0
       ports:
         - containerPort: 8080
+    - name: maven-web-app 
+      image: muralisocial123/flower-app:1.0
+      ports:
+        - containerPort: 3015
