@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: organic-container
-        image: muralisocial123/organic-app-web:latest
+        image: muralisocial123/maven-web-app:1.0
         resources:
           limits:
             memory: "250Mi"
@@ -22,4 +22,4 @@ spec:
             cpu: "100m"
             memory: "128Mi"  
         ports:
-        - containerPort: 5656
+        - containerPort: 8080
