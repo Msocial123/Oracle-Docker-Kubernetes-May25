@@ -1,0 +1,25 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: organic-deployment-app
+spec:
+  selector:
+    matchLabels:
+      app: organic
+  template:
+    metadata:
+      labels:
+        app: organic
+    spec:
+      containers:
+      - name: organic-container
+        image: muralisocial123/organic-app-web:latest
+        resources:
+          limits:
+            memory: "250Mi"
+            cpu: "200m"
+          requests:
+            cpu: "100m"
+            memory: "128Mi"  
+        ports:
+        - containerPort: 5656
