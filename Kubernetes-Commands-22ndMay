@@ -10,3 +10,13 @@
   434  kubectl get pods -n murali-ns
   435  kubectl describe pod sample-pod -n murali-ns
   Image : muralisocial123/maven-web-app:1.0
+  625  kubectl exec -it multi-container-pod -- /bin/sh
+  626  kubectl exec -it -n murali-ns multi-container-pod -- /bin/sh
+  627  cat flower-webapp.yaml 
+  628  kubectl exec -it -n mssait -ns maven1
+  629  kubectl exec -it -n mssait -ns maven1 /bin/sh
+  630  kubectl exec -it  maven1 -n mssait -ns multi-container-pod /bin/bash
+  631  cd ..
+  632  ls
+  633  history
+  634  kubectl exec -it  multi-container-pod -n murali-ns -c maven-web-app -- /bin/sh
