@@ -1,0 +1,7 @@
+369  kubectl create ns murali-ns 
+  370  kubectl get ns 
+  371  kucectl get ns 
+  372  kubectl get ns
+  373  kubectl get all -n kube-system
+  375  kubectl get ns
+  376  history
