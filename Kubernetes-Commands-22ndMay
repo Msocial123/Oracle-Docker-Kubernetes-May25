@@ -20,3 +20,20 @@
   632  ls
   633  history
   634  kubectl exec -it  multi-container-pod -n murali-ns -c maven-web-app -- /bin/sh
+   689  kubectl apply -f replicaset.yaml
+  690  git pull
+  691  kubectl apply -f replicaset.yaml
+  692  git pull
+  693  kubectl apply -f replicaset.yaml
+  694  kubectl get rs
+  695  kubectl get rs -n murali-ns
+  696  kubectl get pods -n murali-ns
+  697  kubectl delete pod maven-app-web-fgxgb
+  698  kubectl delete pod maven-app-web-fgxgb -n murali-ns
+  699  kubectl get pods -o wide
+  700  kubectl get pods -o wide -n murali-ns
+  701  kubectl get events  --sort-by=.metadata.creationTimestamp
+  702  kubectl get events  --sort-by=.metadata.creationTimestamp -n murali-ns
+  703  kubectl get pods -o wide
+  704  kubectl get pods -o wide -n replicaset
+  705  kubectl get pods -o wide -n murali-ns
