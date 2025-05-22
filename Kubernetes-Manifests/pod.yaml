@@ -1,7 +1,7 @@
 apiVersion: v1 
 kind: Pod 
 metadata: 
-  name: maven-web-pod 
+  name: multi-container-pod
   namespace: murali-ns
 spec: 
   containers:
