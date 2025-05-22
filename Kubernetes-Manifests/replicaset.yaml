@@ -12,9 +12,10 @@ spec: # It define the behaviour of the Replicaset
     metadata:
       labels: 
         web: maven 
-      spec: # It define the behaviour of the pod 
-        name: maven-example 
-        image: muralisocial123/maven-web-app:1.0
-        ports: 
-          - containerPort: 8080
+    spec: # It define the behaviour of the pod 
+    containers:
+      name: maven-example 
+      image: muralisocial123/maven-web-app:1.0
+      ports: 
+          - containerPort: 8080  
     
