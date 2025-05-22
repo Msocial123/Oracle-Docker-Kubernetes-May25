@@ -1,0 +1,20 @@
+apiVersion: apps/v1 
+kind: ReplicaSet 
+metadata: 
+  name: maven-app-web
+  namespace: murali-ns 
+spec: # It define the behaviour of the Replicaset 
+  replicas: 3 
+  selector:
+    matchLabels:
+      web: maven
+  template: 
+    metadata:
+      labels: 
+        web: maven 
+      spec: # It define the behaviour of the pod 
+        name: maven-example 
+        image: muralisocial123/maven-web-app:1.0
+        ports: 
+          - containerPort: 8080
+    
