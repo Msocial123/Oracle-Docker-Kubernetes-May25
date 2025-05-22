@@ -5,3 +5,8 @@
   373  kubectl get all -n kube-system
   375  kubectl get ns
   376  history
+  432  kubectl run sample-pod --image nginx --port 80 -n murali-ns
+  433  kubectl get pods
+  434  kubectl get pods -n murali-ns
+  435  kubectl describe pod sample-pod -n murali-ns
+  Image : muralisocial123/maven-web-app:1.0
