@@ -1,7 +1,7 @@
 apiVersion: apps/v1 
 kind: Deployment 
 metadata:
-  name: Maven-web-deployment 
+  name: maven-web-deployment 
 spec:
   replicas: 3
   selector:
@@ -17,4 +17,3 @@ spec:
           image: muralisocial123/maven-web-app:1.0
           ports: 
             - containerPort: 8080
-            
