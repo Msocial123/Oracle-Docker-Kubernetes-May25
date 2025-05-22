@@ -45,3 +45,20 @@
   562  kubectl get top nodes
   563  kubectl  top nodes
   564  history
+  582  kubectl rollout status
+  583  kubectl get deployments
+  584  kubectl rollout status deployment/organic-deployment-app
+  585  kubectl rollout history deployment/organic-deployment-app
+  586  kubectl rollout history deployment/organic-deployment-app --revision 1
+  587  kubectl get deployments -o wide 
+  588  git pull
+  589  kubectl apply -f deployment-resources.yaml
+  590  kubectl rollout history deployment/organic-deployment-app
+  591  kubectl get deployments -o wide 
+  592  kubectl get pods -o wide 
+  593  git pull
+  594  kubectl apply -f Deployment.yaml 
+  595  kubectl get pods -o wide 
+  596  kubectl get deployments -o wide 
+  597  kubectl rollout history deployment/maven-web-deployment
+  598  kubectl rollout history deployment/maven-web-deployment --revision 2 
