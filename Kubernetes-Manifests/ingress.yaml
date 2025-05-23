@@ -1,0 +1,32 @@
+helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+helm repo update
+
+
+kubectl create namespace ingress-nginx
+
+helm install ingress-nginx ingress-nginx/ingress-nginx \
+  --namespace ingress-nginx
+
+kubectl get pods -n ingress-nginx
+
+
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: netflix-ingress
+  namespace: murali-ns
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: netflix-service
+                port:
+                  number: 80
+
