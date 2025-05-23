@@ -30,3 +30,24 @@ spec:
                 port:
                   number: 80
 
+ 955  helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+  956  helm repo update
+  957  ./sleep.sh
+  958  kubectl create namespace ingress-nginx
+  959  chmod 755 ./sleep.sh 
+  960  helm install ingress-nginx ingress-nginx/ingress-nginx   --namespace ingress-nginx
+  961  kubectl get pods -n ingress-nginx
+  962  kubectl get all -n ingress-nginx
+  963  ls
+  964  vi ingress.yaml
+  965  ls
+  966  kubectl get all -n murali-ns
+  967  vi ingress.yaml
+  968  ls
+  969  kubectl apply -f ingress.yaml 
+  970  kubectl get ingress
+  971  kubectl describe ingress minimal-ingress
+  972  kubectl get all -n ingress-nginx
+  973  kubectl describe ingress minimal-ingress
+  974  history
+
