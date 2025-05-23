@@ -24,3 +24,65 @@ spec:
   666  kubectl get all -n murali-ns
   667  cat service.yaml 
   668  history
+
+
+  ========
+
+  apiVersion: v1
+kind: Secret
+metadata:
+  name: my-secret
+data:
+  username: bXVyYWxpNTI2
+  password: bXVyYWxpQCMkMjU=
+
+
+  ===================
+  apiVersion: v1
+kind: CinfigMap
+metadata: 
+  name: my-configmap
+data:
+  name: murali
+  course: k8s
+  key3:
+    hello
+    welcome to configmap
+    mulitline testing
+
+    ===================
+
+    
+    
+    19358  vi secret.yaml
+19359  ls
+19360  cat secret.yaml 
+19361  kubectl apply -f secret.yaml 
+19362  kubectl get secrets
+19363  cd tests/
+19364  ls
+19365  cat test-connection.yaml 
+19366  cd ..
+19367  echo -n 'bXVyYWxpNTI2' | base64 --decode
+19368  echo -n 'bXVyYWxpQCMkMjU=' | base64 --d
+19369  ls
+19370  cd hpa.yaml 
+19371  cat hpa.yaml 
+19372  history
+19373  ls
+19374  cat _helpers.tpl 
+19375  cat NOTES.txt 
+19376  cd ..
+19377  ls
+19378  cd ..
+19379  vi configmap.yaml
+19380  ls
+19381  car configmap.yaml 
+19382  cat configmap.yaml 
+19383  kubectl apply -f configmap.yaml 
+19384  vi configmap.yaml
+19385  ls
+19386  zip -r demo-chart.zip ./demo-chart/
+19387  kubectl apply -f configmap.yaml 
+19388  ls
+19389  kubectl get configmaps
