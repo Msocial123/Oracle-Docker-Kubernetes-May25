@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: netflix-service
+  namespace: murali-ns
+spec:
+  selector:
+    app: demo
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+
+
+  657  vi service.yaml
+  658  ls
+  659  kubectl apply -f service.yaml 
+  660  kubectl get all -n murali-ns
+  661  kubectl get svc
+  662  kubectl delete svc netflix-service
+  663  ls
+  664  vi service.yaml 
+  665  kubectl apply -f service.yaml 
+  666  kubectl get all -n murali-ns
+  667  cat service.yaml 
+  668  history
